@@ -1,0 +1,2 @@
+# nanucoin
+nanucoin (NNC)
