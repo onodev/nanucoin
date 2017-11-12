@@ -1,31 +1,34 @@
 # nanucoin
 nanucoin (NNC)
-project 2017-10-23
+project 2017-11-12
 
 ## Coin specs:
 ### Algo: 
 Xevan
 
+### N0 PREMINE
+
 #### PoW Block Reward:
-[block #2-undefined] 0% MN (0 NNC) / 0% MINER (0 NNC) / 10% Available to the budget system (0 NNC)
+[block #     1-43200] 5.0 NNC - 50% MN / 50% MINER
+[block # 43201-86400] 4.5 NNC - 50% MN / 50% MINER
+[block # 86401-129600] 4.0 NNC - 50% MN / 50% MINER
+[block #129601-172800] 3.5 NNC - 50% MN / 50% MINER
+[block #172801-216000] 3.0 NNC - 50% MN / 50% MINER
+[block #216001-259200] 2.5 NNC - 50% MN / 50% MINER
 
 #### PoS Block Reward:
-[block #undefined-Infinite] Variable based on SeeSaw Reward Mechanism
+[block #undefined-Infinite] temporarily disabled
 
 #### Block Time:
 60 Seconds with Retargeting every Block
 
 #### Max Coin Supply:
-PoW Phase: undefined NNC
+PoW Phase: 972000 NNC
 
 #### Max Coin Supply:
-PoS Phase: Infinte
+PoW/PoS Phase: Infinte temporarily disabled
 
-##### PoW Phase 1: [block #1] 0 Premine to run 5 masternodes.
-##### PoW Phase 2: [block #2-undefined] Approx undefined Days
+Masternodes: 50000 NNC collateral
 
-#### PoW Rewards Breakdown:
-##### [block 2-undefined] 0% MN (0 NNC) / 0% MINER (0 NNC)</li>
-
-#### PoS Rewards Breakdown:
-##### PoS Phase 1: [blocks undefined-undefined] 0 NNC (90% distributed to staker and masternode - 10% available to budget system)
+budget system DISABLE
+budget proposal fee 50.0 NNC
