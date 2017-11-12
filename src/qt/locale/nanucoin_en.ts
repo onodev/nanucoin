@@ -5490,7 +5490,7 @@ for example: alertnotify=echo %%s | mail -s &quot;NanuCoin Alert&quot; admin@foo
     </message>
     <message>
         <location line="+1"/>
-        <source>Copyright (C) 2015-%i The NanuCoin Core Developers</source>
+        <source>Copyright (C) 2017-%i The NanuCoin Core Developers</source>
         <translation type="unfinished"></translation>
     </message>
     <message>

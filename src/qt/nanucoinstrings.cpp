@@ -233,7 +233,7 @@ QT_TRANSLATE_NOOP("nanucoin-core", "Connect to a node to retrieve peer addresses
 QT_TRANSLATE_NOOP("nanucoin-core", "Connection options:"),
 QT_TRANSLATE_NOOP("nanucoin-core", "Copyright (C) 2009-%i The Bitcoin Core Developers"),
 QT_TRANSLATE_NOOP("nanucoin-core", "Copyright (C) 2014-%i The Dash Core Developers"),
-QT_TRANSLATE_NOOP("nanucoin-core", "Copyright (C) 2015-%i The NanuCoin Core Developers"),
+QT_TRANSLATE_NOOP("nanucoin-core", "Copyright (C) 2017-%i The NanuCoin Core Developers"),
 QT_TRANSLATE_NOOP("nanucoin-core", "Corrupted block database detected"),
 QT_TRANSLATE_NOOP("nanucoin-core", "Could not parse -rpcbind value %s as network address"),
 QT_TRANSLATE_NOOP("nanucoin-core", "Could not parse masternode.conf"),
