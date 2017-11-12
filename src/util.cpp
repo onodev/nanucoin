@@ -531,7 +531,9 @@ void ReadConfigFile(map<string, string>& mapSettingsRet,
         fprintf(ConfFile, "rpcport=11922\n");
         fprintf(ConfFile, "rpcconnect=127.0.0.1\n");
         fprintf(ConfFile, "rpcallowip=127.0.0.1\n");
-        //fprintf(ConfFile, "addnode=seed.martexcoin.org:51315\n");
+        fprintf(ConfFile, "# masternode=1\n");
+        fprintf(ConfFile, "# masternodeprivkey=use_masternode_genkey\n");
+        fprintf(ConfFile, "# masternodeaddr=STATICIP:11923\n");
 
         fclose(ConfFile);
 

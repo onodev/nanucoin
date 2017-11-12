@@ -18,7 +18,7 @@ const std::string CLIENT_NAME("NanuCoin Core");
 /**
  * Client version number
  */
-#define CLIENT_VERSION_SUFFIX "beta01"
+#define CLIENT_VERSION_SUFFIX ""
 
 
 /**
