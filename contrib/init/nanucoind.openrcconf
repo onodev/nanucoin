@@ -1,0 +1,26 @@
+# /etc/conf.d/nanucoind: config file for /etc/init.d/nanucoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/nanucoin/nanucoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/nanucoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/nanucoind.pid"
+
+# Where to write nanucoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/nanucoind"
+
+# User and group to own nanucoind process
+#BITCOIND_USER="nanucoin"
+#BITCOIND_GROUP="nanucoin"
+
+# Path to nanucoind executable
+#BITCOIND_BIN="/usr/bin/nanucoind"
+
+# Nice value to run nanucoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS=""
