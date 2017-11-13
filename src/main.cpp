@@ -1663,7 +1663,7 @@ bool IsInitialBlockDownload() {
     LOCK(cs_main);
     if (fImporting || fReindex || chainActive.Height() < Checkpoints::GetTotalBlocksEstimate())
         return true;
-    static bool lockIBDState = true; //nanucoin
+    static bool lockIBDState = false;
     if (lockIBDState)
         return false;
     bool state = (chainActive.Height() < pindexBestHeader->nHeight - 24 * 6 ||

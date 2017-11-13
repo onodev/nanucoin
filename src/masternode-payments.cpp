@@ -250,12 +250,12 @@ void FillBlockPayee(CMutableTransaction& txNew, int64_t nFees, bool fProofOfStak
     CBlockIndex* pindexPrev = chainActive.Tip();
     if (!pindexPrev) return;
 
-    LogPrintf("------------------------------------- FillBlockPayee\n");
-    LogPrintf("------------------------------------- FillBlockPayees IsSporkActive 13 %s\n", IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS));
-    LogPrintf("------------------------------------- FillBlockPayees IsBudgetPaymentBlock %s\n", budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1));
+    //LogPrintf("------------------------------------- FillBlockPayee\n");
+    //LogPrintf("------------------------------------- FillBlockPayees IsSporkActive 13 %s\n", IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS));
+    //LogPrintf("------------------------------------- FillBlockPayees IsBudgetPaymentBlock %s\n", budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1));
     
     if (IsSporkActive(SPORK_13_ENABLE_SUPERBLOCKS) && budget.IsBudgetPaymentBlock(pindexPrev->nHeight + 1)) {
-        LogPrintf("------------------------------------- budget\n");
+        //LogPrintf("------------------------------------- budget\n");
         budget.FillBlockPayee(txNew, nFees, fProofOfStake);
     } else {
         masternodePayments.FillBlockPayee(txNew, nFees, fProofOfStake);
