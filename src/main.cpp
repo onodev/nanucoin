@@ -1584,23 +1584,23 @@ int64_t GetBlockValue(int nHeight) {
     if (Params().NetworkID() == CBaseChainParams::TESTNET) {
         if (nHeight == 0) {
             nSubsidy = 5 * COIN;
-        } else if (nHeight <= 19 && nHeight >= 1) {
+        } else if (nHeight <= 199 && nHeight >= 1) {
             nSubsidy = 5 * COIN;
-        } else if (nHeight <= 39 && nHeight >= 20) {
+        } else if (nHeight <= 399 && nHeight >= 200) {
             nSubsidy = 4.5 * COIN;
-        } else if (nHeight <= 59 && nHeight >= 40) {
+        } else if (nHeight <= 599 && nHeight >= 400) {
             nSubsidy = 4 * COIN;
-        } else if (nHeight <= 79 && nHeight >= 60) {
+        } else if (nHeight <= 799 && nHeight >= 600) {
             nSubsidy = 3.5 * COIN;
-        } else if (nHeight <= 99 && nHeight >= 80) {
+        } else if (nHeight <= 999 && nHeight >= 800) {
             nSubsidy = 3 * COIN;
-        } else if (nHeight <= 119 && nHeight >= 100) {
+        } else if (nHeight <= 1199 && nHeight >= 1000) {
             nSubsidy = 2.5 * COIN;
-        } else if (nHeight >= 120) {
+        } else if (nHeight >= 1200) {
             nSubsidy = 0 * COIN;
-            assert(false);
+            //assert(false); 
         }
-        return nSubsidy * 1000;
+        return nSubsidy * 200;
     }
 
     if (nHeight == 0) {
@@ -1627,16 +1627,16 @@ int64_t GetBlockValue(int nHeight) {
 int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCount) {
     int64_t ret = 0;
 
-    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
-        if (nHeight < 200)
-            return 0;
-    }
+    //    if (Params().NetworkID() == CBaseChainParams::TESTNET) {
+    //        if (nHeight < 200)
+    //            return 0;
+    //    }
 
     if (nHeight == 0)
         return 0;
 
     if (nHeight <= Params().LAST_POW_BLOCK()) {
-        ret = blockValue / 2;
+        ret = blockValue * 0.4;
     } else if (nHeight > Params().LAST_POW_BLOCK()) {
         int64_t nMoneySupply = chainActive.Tip()->nMoneySupply;
         int64_t mNodeCoins = mnodeman.size() * 10000 * COIN;
@@ -1652,7 +1652,7 @@ int64_t GetMasternodePayment(int nHeight, int64_t blockValue, int nMasternodeCou
         if (mNodeCoins == 0) {
             ret = 0;
         } else {
-            ret = blockValue / 2;
+            ret = blockValue * 0.4;
         }
     }
 
