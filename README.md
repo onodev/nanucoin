@@ -1,4 +1,4 @@
-# nanucoin 1.1.6.0
+# nanucoin 1.1.6.1
 nanucoin (NNC)
 project 2017-11-12
 
