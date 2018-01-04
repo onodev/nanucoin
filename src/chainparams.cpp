@@ -54,11 +54,13 @@ static Checkpoints::MapCheckpoints mapCheckpoints =
      (1440, uint256("0x000000000c888ba2eb7ce7efa46eb6f260f88b71a83b81ee904b0b1d1c7eb770"))
      (2435, uint256("0x0000000007fadbf658294bd83d6254f73af0207ab4881ac34f8c5d76a22a8c74"))
     (18293, uint256("0x000000003e1b755cda6940588ea4849a85bcabbdad960ee942b299f4a2383a2e"))
+    (43201, uint256("0x000000000d9a4d836f16e0436aa23fc5cc0d80ff6392987cadda86ffcf111a1a"))
+    (71752, uint256("0x0000000006cad6d5e094674a8b75ef0aa995c48d6023731e5de8c3fb2c22e500"))
 ;
 
 static const Checkpoints::CCheckpointData data = {
     &mapCheckpoints,
-    1511697319, // * UNIX timestamp of last checkpoint block
+    1515067692, // * UNIX timestamp of last checkpoint block
     100000, // * total number of transactions between genesis and last checkpoint
     //   (the tx=... number in the SetBestChain debug.log lines)
     2000 // * estimated number of transactions per day after checkpoint
@@ -180,7 +182,7 @@ public:
         nMinerThreads = 0;
         nTargetTimespan = 1 * 60; // NanuCoin: 1 day
         nTargetSpacing = 1 * 60; // NanuCoin: 1 minute
-        nLastPOWBlock = 1200;
+        nLastPOWBlock = 12000;
         nMaturity = 10;
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1510533000;
