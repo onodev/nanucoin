@@ -62,7 +62,7 @@ CTxOut::CTxOut(const CAmount& nValueIn, CScript scriptPubKeyIn) {
 
 bool COutPoint::IsMasternodeReward(const CTransaction* tx) const {
     if (!tx->IsCoinStake())
-        return false;
+        return (tx->vin.size() == 1 && tx->vin[0].prevout.IsNull());
 
     return (n == tx->vout.size() - 1) && (tx->vout[1].scriptPubKey != tx->vout[n].scriptPubKey);
 }
