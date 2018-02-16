@@ -26,7 +26,7 @@ Xevan
 60 Seconds with Retargeting every Block
 
 #### Max Coin Supply:
-PoW Phase: 972000 NNC
+PoW Phase: 1166400 NNC
 
 #### Max Coin Supply:
 PoW/PoS Phase: Infinte temporarily disabled
